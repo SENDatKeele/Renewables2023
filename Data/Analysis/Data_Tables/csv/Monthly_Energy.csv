@@ -1,0 +1,14 @@
+Month,Energy consumption,Wind turbine Energy generation,Solar panel energy generation,Excess energy generation
+,[MWh],[MWh],[MWh],[MWh]
+January,1342,205,90.9,0.471
+February,1106,128,245,7.99
+March,1205,155,317,24.9
+April,1224,122,529,68.1
+May,1417,81,728,97.6
+June,1163,78.2,713,124
+July,1138,119,290,47.4
+August,1013,80,492,79.5
+September,1061,109,444,67.7
+October,1372,101,222,23.4
+November,1585,145,150,2.58
+December,1498,295,67.5,1.79

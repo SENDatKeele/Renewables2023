@@ -1,0 +1,14 @@
+Month,Power consumption,Wind turbine power generation,Solar panel power generation,Power excess
+,[kW],[kW],[kW],[kW]
+January,1804,275,122,0.634
+February,1646,190,364,11.9
+March,1620,208,426,33.5
+April,1700,169,734,94.6
+May,1905,109,979,131
+June,1615,109,991,172
+July,1529,160,390,63.7
+August,1361,108,661,107
+September,1473,151,617,94
+October,1844,136,298,31.5
+November,2202,201,208,3.58
+December,2013,396,90.7,2.41

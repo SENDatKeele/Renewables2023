@@ -1,0 +1,10 @@
+Power Source:,Power Excess,Power Excess,Solar,Solar,Solar,Wind,Wind,Wind
+Electrolyser Power [kW],H2 Mass [t],H2 Mass by Electrolyser Size [t/MW],H2 Mass [t],H2 Mass by Capacity [t/MW],H2 Mass by Electrolyser Size [t/MW],H2 Mass [t],H2 Mass by Capacity [t/MW],H2 Mass by Electrolyser Size [t/MW]
+25,2.41,96.3,3.6,1.68,144,3.37,1.98,135
+50,3.69,73.9,6.93,3.19,139,5.18,3.05,104
+100,4.78,47.8,12.1,5.53,121,7.24,4.26,72.4
+250,6.17,24.7,18.6,8.53,74.6,10.9,6.42,43.6
+500,7.69,15.4,27.7,12.7,55.5,13.6,8.02,27.3
+1000,7.78,7.78,41.4,18.9,41.4,14.7,8.66,14.7
+1500,6.05,4.03,45.9,21,30.6,7.01,4.13,4.68
+2000,3.71,1.86,38.9,18,19.4,1.32,0.774,0.658
