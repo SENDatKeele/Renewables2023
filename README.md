@@ -46,7 +46,7 @@ The following parameters should be included in your request:
 - **`surface_pressure`**
 - **`wind_speed_100m`**
 
-Once downloaded, you must upload it to the folder [`Renewables2023_Private/Private_Data/Solcast/Solcast.csv`](Renewables2023_Private/Private_Data/Solcast/Solcast.csv) and run the script [`Scripts/Utils/Format_Solcast.ipynb`](Scripts/Utils/Format_Solcast.ipynb). This will save a readable version of the data to the [`Renewables2023_Private/Private_Data/Solcast`](Renewables2023_Private/Private_Data/Solcast/) folder, with which you can run other scripts in the [`Scripts`](Scripts/) folder. 
+Once downloaded, you must upload it to the folder `Renewables2023_Private/Private_Data/Solcast/Solcast.csv` and run the script [`Scripts/Utils/Format_Solcast.ipynb`](Scripts/Utils/Format_Solcast.ipynb). This will save a readable version of the data to the `Renewables2023_Private/Private_Data/Solcast` folder, with which you can run other scripts in the [`Scripts`](Scripts/) folder. 
 
 ### Key to Solcast Data
 Below is a list of the names of parameters used (from the formatted version of the data) and their definitions (text sourced from Solcast, available [here](https://kb.solcast.com.au/glossary-of-terms))
@@ -98,7 +98,7 @@ The following describes what each file in the `Scripts` directory does.
     - For context, the distribution fo wind speeds and global tilted irradiance and the true and expected fractional activity of solar panels and wind turbines are also plotted.
 
     > ### ⚠️ N.B.
-    > Requires Solcast saved at [`Renewables2023_Private/Private_Data/Solcast/Solcast.csv`](Renewables2023_Private/Private_Data/Solcast/Solcast.csv) to have full functionality. See [here](#solcast-data) for how to do this.
+    > Requires Solcast saved at `Renewables2023_Private/Private_Data/Solcast/Solcast.csv` to have full functionality. See [here](#solcast-data) for how to do this.
 
 - [**`Review_All_Data.ipynb`**](Scripts/Review_All_Data.ipynb)
     - This provides a function to (over)plot all data available, allowing the user to gain a better understanding of the characteristics and potential challenges of data available.
@@ -111,7 +111,7 @@ The following describes what each file in the `Scripts` directory does.
     - **Winter:** A sunny winter day, showing erratic solar power production due to cloud cover.
 
     > ### ⚠️ N.B.
-    > Requires Solcast saved at [`Renewables2023_Private/Private_Data/Solcast/Solcast.csv`](Renewables2023_Private/Private_Data/Solcast/Solcast.csv) to have full functionality. See [here](#solcast-data) for how to do this. 
+    > Requires Solcast saved at `Renewables2023_Private/Private_Data/Solcast/Solcast.csv` to have full functionality. See [here](#solcast-data) for how to do this. 
 
 - [**`Simulate_Hydrogen_Production.ipynb`**](Scripts/Simulate_Hydrogen_Production.ipynb)
     - A script to simulate the production of hydrogen in various scenarios. To gain full understanding of the simulation, please see the notebook.
