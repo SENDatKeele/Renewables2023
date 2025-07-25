@@ -4,10 +4,26 @@ This is the repository containing the release and analysis of the power producti
 # How to Use
 
 ## Installation 
-To use this repository, fork and clone it by following [this link](https://github.com/SENDatKeele/SEND_2023_Public/fork) or by copying the code
+To use this repository, please consider one of the following options:
+
+[Fork and clone it](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo#forking-a-repository) by following [this link](https://github.com/SENDatKeele/Renewables2023/fork) or by copying the code
 
 ```bash
-gh repo fork SENDatKeele/SEND_2023_Public --clone=true
+gh repo fork SENDatKeele/Renewables2023 --clone=true
+```
+
+Alternatively, [mirror it](https://docs.github.com/en/repositories/creating-and-managing-repositories/duplicating-a-repository#mirroring-a-repository) by coping and modifying the following code:
+
+```bash
+git clone --bare https://github.com/SENDatKeele/Renewables2023
+```
+```bash
+cd Renewables2023
+git push --mirror https://github.com/EXAMPLE-USER/NEW-REPOSITORY.git
+```
+```bash
+cd ..
+rm -rf Renewables2023
 ```
 
 ## Solcast data
@@ -30,7 +46,7 @@ The following parameters should be included in your request:
 - **`surface_pressure`**
 - **`wind_speed_100m`**
 
-Once downloaded, you must upload it to the folder [`Private_Data/Solcast/Solcast.csv`](Private_Data/Solcast/Solcast.csv) and run the script [`Scripts/Utils/Format_Solcast.ipynb`](Scripts/Utils/Format_Solcast.ipynb). This will save a readable version of the data to the [`Private_Data/Solcast`](Private_Data/Solcast/) folder, with which you can run other scripts in the [`Scripts`](Scripts/) folder. 
+Once downloaded, you must upload it to the folder [`Renewables2023_Private/Private_Data/Solcast/Solcast.csv`](Renewables2023_Private/Private_Data/Solcast/Solcast.csv) and run the script [`Scripts/Utils/Format_Solcast.ipynb`](Scripts/Utils/Format_Solcast.ipynb). This will save a readable version of the data to the [`Renewables2023_Private/Private_Data/Solcast`](Renewables2023_Private/Private_Data/Solcast/) folder, with which you can run other scripts in the [`Scripts`](Scripts/) folder. 
 
 ### Key to Solcast Data
 Below is a list of the names of parameters used (from the formatted version of the data) and their definitions (text sourced from Solcast, available [here](https://kb.solcast.com.au/glossary-of-terms))
@@ -82,7 +98,7 @@ The following describes what each file in the `Scripts` directory does.
     - For context, the distribution fo wind speeds and global tilted irradiance and the true and expected fractional activity of solar panels and wind turbines are also plotted.
 
     > ### ⚠️ N.B.
-    > Requires Solcast saved at [`Private_Data/Solcast/Solcast.csv`](Private_Data/Solcast/Solcast.csv) to have full functionality. See [here](#solcast-data) for how to do this.
+    > Requires Solcast saved at [`Renewables2023_Private/Private_Data/Solcast/Solcast.csv`](Renewables2023_Private/Private_Data/Solcast/Solcast.csv) to have full functionality. See [here](#solcast-data) for how to do this.
 
 - [**`Review_All_Data.ipynb`**](Scripts/Review_All_Data.ipynb)
     - This provides a function to (over)plot all data available, allowing the user to gain a better understanding of the characteristics and potential challenges of data available.
@@ -95,7 +111,7 @@ The following describes what each file in the `Scripts` directory does.
     - **Winter:** A sunny winter day, showing erratic solar power production due to cloud cover.
 
     > ### ⚠️ N.B.
-    > Requires Solcast saved at [`Private_Data/Solcast/Solcast.csv`](Private_Data/Solcast/Solcast.csv) to have full functionality. See [here](#solcast-data) for how to do this. 
+    > Requires Solcast saved at [`Renewables2023_Private/Private_Data/Solcast/Solcast.csv`](Renewables2023_Private/Private_Data/Solcast/Solcast.csv) to have full functionality. See [here](#solcast-data) for how to do this. 
 
 - [**`Simulate_Hydrogen_Production.ipynb`**](Scripts/Simulate_Hydrogen_Production.ipynb)
     - A script to simulate the production of hydrogen in various scenarios. To gain full understanding of the simulation, please see the notebook.
@@ -144,5 +160,5 @@ Below is an explanation of other files available.
 # Citation
 
 # License
-
+This projects is licenced under the MIT License, as detailed [here](LICENSE).
 # Project Status
