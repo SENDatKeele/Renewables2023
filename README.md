@@ -69,6 +69,9 @@ Note that a further modified version, used by scripts, is provided at [`Data/DEO
 > ### ⚠️ N.B.
 > These assumptions were chosen to be conservative and, in some cases, over estimate the campus load.
 
+### July Maintenance Gap
+During July 2023 there is a maintenance-related gap in solar generation data. When [`Scripts/Utils/Format_DEOP.ipynb`](Scripts/Utils/Format_DEOP.ipynb) is run, this gap is detected as a continuous block of near-zero daily PV generation and the solar data are backfilled using an early-June high-yield window. This adjustment is applied only to `power-gen-pv-ave` in `2023_DEOP_Interp.csv`; the original `2023_DEOP.csv` remains unchanged.
+
 ### Key to DEOP Data
 Below is a list of the names of parameters used (in the formatted versions).
 
@@ -115,6 +118,8 @@ The following describes what each file in the `Scripts` directory does.
 
 - [**`Simulate_Hydrogen_Production.ipynb`**](Scripts/Simulate_Hydrogen_Production.ipynb)
     - A script to simulate the production of hydrogen in various scenarios. To gain full understanding of the simulation, please see the notebook.
+- [**`Utils/Format_DEOP.ipynb`**](Scripts/Utils/Format_DEOP.ipynb)
+    - Formats the monthly DEOP exports into the public datasets, interpolates campus load in `2023_DEOP_Interp.csv`, and applies the July PV maintenance gap-fill described above.
 
 ## Other Files
 Below is an explanation of other files available.
